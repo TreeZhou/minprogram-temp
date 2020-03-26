@@ -1,0 +1,13 @@
+<view class="d-header" style="height:{{statusH + navH}}px;">
+	<view bindtap="_tapBack" wx:if="{{showBack && backBtn}}" class='btn-back'>
+		<image class="back-img" src="./btn-back.png" />
+		<text class="back-text">返回</text>
+	</view>
+	<view class="d-header-status" style="height:{{statusH}}px;" />
+	<view class="d-header-main">
+		<view class="d-header-title">{{title}}</view>
+	</view>
+</view>
+
+<!-- <d-header  title='导航栏标题'/> -->
+

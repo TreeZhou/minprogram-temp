@@ -1,0 +1,16 @@
+<view class='search-bar-wrap' style="{{'height:'+height+';width:'+width}}">
+	<view class='search-bar-wrap-inner'>
+		<image src="./search-bar-icon.png" class='icon' />
+		<input
+		 placeholder-class='placeholder'
+		 placeholder="{{placehold}}"
+		 class='input'
+		 bindinput='onInput'
+		 value="{{value}}"
+		/>
+	</view>
+
+</view>
+
+<!-- <search-bar height='50rpx' placehold='占位''> -->
+

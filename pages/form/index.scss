@@ -1,0 +1,117 @@
+.weui-cell {
+  padding: 40rpx 32rpx 24rpx !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  .weui-cell__hd {
+    font-size: 32rpx;
+    color: #9f9f9f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .weui-cell__bd {
+    font-size: 32rpx;
+    color: #9f9f9f;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+.weui-cells:after,
+.weui-cells:before {
+  border: unset;
+}
+
+.date-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.phone-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 85rpx;
+    .phone {
+      width: 90%;
+    }
+  }
+}
+.sex-wrap {
+  width: 300rpx;
+  display: inline-block;
+  .radio {
+    display: inline-block;
+    margin-left: 60rpx;
+  }
+  .ratio-icon {
+    width: 23rpx;
+    height: 23rpx;
+  }
+}
+.year-input {
+  position: relative;
+  display: inline-block;
+  width: 100rpx;
+}
+.month-input {
+  display: inline-block;
+  width: 165rpx;
+  margin-left: 20rpx;
+}
+
+.placeholder {
+  font-size: 32rpx;
+  color: #9f9f9f;
+}
+
+.prococol {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 960rpx;
+  width: 750rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-size: 22rpx;
+  .specila {
+    color: #84b826;
+  }
+  .checkbox {
+    transform: scale(0.8);
+    transform-origin: 50% 50%;
+  }
+}
+
+//todo
+.btn-phone {
+  width: 575rpx;
+  height: 80rpx;
+  background-color: unset;
+  &:after {
+    content: unset;
+  }
+}

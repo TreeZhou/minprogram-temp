@@ -1,0 +1,38 @@
+.search-bar-wrap {
+  position: relative;
+  box-sizing: border-box; }
+
+.search-bar-wrap-inner {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 67rpx;
+  border-radius: 72rpx;
+  background-color: white;
+  padding: 20rpx 32rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px rgba(134, 132, 132, 0.418) solid;
+  border-radius: 100rpx; }
+
+.input {
+  position: relative;
+  display: inline-block;
+  color: #061e52;
+  font-size: 25rpx;
+  width: 608rpx;
+  text-indent: 20rpx;
+  margin-left: 10rpx; }
+
+.placeholder {
+  font-size: 22rpx;
+  color: #ababab; }
+
+.icon {
+  width: 25rpx;
+  height: 25rpx;
+  flex: 0 0 auto; }

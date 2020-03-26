@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/index",
+    "pages/form/index"
+  ],
+  "navigateToMiniProgramAppIdList": [
+    "wx4579d93fd3f879df"
+  ],
+  "window": {},
+  "enablePullDownRefresh": true,
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "usingComponents": {
+    "van-collapse": "./@vant/weapp/collapse/index",
+    "van-collapse-item": "./@vant/weapp/collapse-item/index",
+    "van-tab": "./@vant/weapp/tab/index",
+    "van-tabs": "./@vant/weapp/tabs/index",
+    "van-radio": "./@vant/weapp/radio/index",
+    "van-radio-group": "./@vant/weapp/radio-group/index",
+    "van-cell": "./@vant/weapp/cell/index",
+    "van-cell-group": "./@vant/weapp/cell-group/index",
+    "van-divider": "./@vant/weapp/divider/index",
+    "van-uploader": "./@vant/weapp/uploader/index",
+    "van-popup": "./@vant/weapp/popup/index",
+    "van-overlay": "./@vant/weapp/overlay/index",
+    "van-checkbox": "./@vant/weapp/checkbox/index",
+    "van-checkbox-group": "./@vant/weapp/checkbox-group/index",
+    "van-button": "./@vant/weapp/button/index",
+    "van-dialog": "./@vant/weapp/dialog/index",
+    "van-dropdown-menu": "./@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "./@vant/weapp/dropdown-item/index",
+    "van-icon": "./@vant/weapp/icon/index",
+    "mp-searchbar": "./weui-miniprogram/searchbar/searchbar",
+    "mp-icon": "./weui-miniprogram/icon/icon",
+    "mp-cells": "./weui-miniprogram/cells/cells",
+    "mp-cell": "./weui-miniprogram/cell/cell",
+    "mp-form": "./weui-miniprogram/form/form",
+    "nav-tab": "./components/nav-tab/index",
+    "cus-btn": "./components/cus-btn/index",
+    "d-header": "./components/d-header/index",
+    "d-page": "./components/d-page/index",
+    "search-bar": "./components/search-bar/index",
+    "cus-cell": "./components/cus-cell/index",
+    "common-popup": "./components/common-popup/index",
+    "calendar": "./components/calendar/index",
+    "select": "./components/select/index",
+    "qrcode": "./components/qrcode/index",
+    "cus-upload": "./components/cus-upload/index"
+  },
+  "resizable": false,
+  "plugins": {},
+  "networkTimeout": {
+    "request": 1000000,
+    "connectSocket": 100000,
+    "uploadFile": 100000,
+    "downloadFile": 100000
+  }
+}

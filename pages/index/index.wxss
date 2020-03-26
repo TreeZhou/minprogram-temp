@@ -1,0 +1,40 @@
+.loading {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 300rpx;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.logo {
+  width: 185rpx;
+  height: 67rpx;
+  position: absolute;
+  top: 0rpx;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.process-bar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 120rpx;
+  border-radius: 10rpx;
+  width: 447rpx;
+  height: 10rpx;
+  background-color: #e2e6dc;
+  overflow: hidden; }
+  .process-bar .process-content {
+    height: 100%;
+    width: 0%;
+    background-color: rgba(133, 184, 38, 0.753); }
+
+.text {
+  position: absolute;
+  top: 150rpx;
+  color: #9f9f9f;
+  font-size: 20rpx;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }

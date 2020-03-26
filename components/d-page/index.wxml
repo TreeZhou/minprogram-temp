@@ -1,0 +1,30 @@
+<view class="d-page" style="background-color:{{bg}};min-height:{{wh}}rpx">
+	<slot name="head" />
+	<view class="flex" style="top:{{h}}px;bottom:0px">
+		<slot name="full-bg" />
+		<view wx:if="{{ safeAreaMode }}" class="{{ableSafeArea ? 'safe-area':'full'}}">
+			<slot name="safe-page" />
+		</view>
+		<view wx:else class="full">
+			<slot/>
+		</view>
+	</view>
+</view>
+
+<!-- 
+	全屏模式
+	<d-page>
+	<d-header backBtn="{{false}}" slot='head' />
+	<view slot='full-bg'>
+		。。。
+	</view>
+</d-page> -->
+
+<!--
+	安全区域模式
+	<d-page safeAreaMode="{{true}}">
+	<d-header backBtn=" {{false}}" slot="head" />
+	<view slot="safe-page">s
+	</view>
+</d-page> -->
+

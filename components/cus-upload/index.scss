@@ -1,0 +1,24 @@
+.cus-upload {
+  .van-uploader__preview-image {
+    width: 100rpx !important;
+    height: 100rpx !important;
+  }
+}
+.add-icon {
+  width: 200rpx;
+  height: 200rpx;
+  right: 54rpx;
+  bottom: 272rpx;
+}
+.process-bar {
+  border: 1rpx hsla(81, 66%, 44%, 0.678) solid;
+  border-radius: 10rpx;
+  width: 120rpx;
+  height: 10rpx;
+  background-color: #e2e6dc;
+  .process-content {
+    height: 100%;
+    width: 0%;
+    background-color: rgba(133, 184, 38, 0.753);
+  }
+}

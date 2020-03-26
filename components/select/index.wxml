@@ -1,0 +1,31 @@
+<common-popup width="640" height="910">
+	<text class="title">标题</text>
+	<search-bar class="search-bar" bindinput='onSearchBarInput' />
+	<scroll-view class="scroll" scroll-y="true">
+		<radio-group class="radio-group" bindchange="radioChange" value="{{checked}}">
+			<label class="radio" wx:for="{{filterDatas}}" wx:key="{{item.id}}">
+				<view class="name">
+					{{item.name}}
+				</view>
+				<radio checked="{{checked == item.id}}" value="{{item.id}}" />
+			</label>
+		</radio-group>
+	</scroll-view>
+	<cus-btn
+	 class='btn-next'
+	 bgc="#68B200"
+	 fontSize="{{32}}"
+	 bind:click='next'
+	 text="确定"
+	/>
+</common-popup>
+
+<!-- <select
+ wx:if="{{selectShopVisiable}}"
+ shops="{{datas}}"
+ defaultId="{{id}}"
+ bind:selected='selectShop'
+ bind:close='hideAllPopup'
+/>
+  -->
+

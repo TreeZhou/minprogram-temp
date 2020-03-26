@@ -1,0 +1,179 @@
+/* pages/calendar/calendar.wxss */
+
+.canlendarBgView {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.canlendarView {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.canlendarTopView {
+  height: 80rpx;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.leftBgView {
+  text-align: right;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.leftView {
+  width: 80rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.centerView {
+  width: 50%;
+  height: 80rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  color: #333333;
+}
+
+.rightBgView {
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.rightView {
+  width: 80rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.weekBgView {
+  height: 50rpx;
+  line-height: 50rpx;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #181717;
+  padding-bottom: 10rpx;
+  border-bottom: 1px #d7d7d7 solid;
+  transform-origin: 50% 0%;
+  transform: scale(0.95);
+  position: relative;
+}
+
+.weekView {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.dateBgView {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  transform-origin: 50% 0%;
+  transform: scale(0.9);
+  position: relative;
+}
+.dateBgViewLong {
+  height: 600rpx;
+}
+.dateBgViewShort {
+  height: 500rpx;
+}
+
+.dateEmptyView {
+  width: 107.1428571429rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dateView {
+  width: 107.1428571429rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.datesView {
+  width: 60rpx;
+  height: 60rpx;
+  color: rgb(0, 0, 0);
+  font-size: 28rpx;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dateSelectView {
+  position: relative;
+  left: 0;
+  top: 0;
+  color: #fff;
+  background-color: rgb(6, 9, 187);
+}
+.dateSelectViewRadiu {
+  /* border-radius: 50%; */
+  position: relative;
+  left: 0;
+  top: 0;
+  color: #fff;
+  /* background-color: #6abb06; */
+}
+
+.dateSelectViewRadiu:before {
+  content: '';
+  width: 80%;
+  height: 80%;
+  background-color: #6abb06;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.dateSelectView view {
+  color: #fff;
+}
+.dateSelectViewRadiu view {
+  color: #fff;
+  position: relative;
+}
+
+.border {
+  border-bottom: 1px #d7d7d7 solid;
+}
+.border-line {
+  width: 785rpx;
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+}

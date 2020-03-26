@@ -1,0 +1,27 @@
+.cell-item {
+  position: relative;
+  width: 664rpx;
+  height: 112rpx;
+  line-height: 112rpx;
+  background-color: #e0dbdb; }
+  .cell-item .icon {
+    width: 35rpx;
+    height: 35rpx;
+    vertical-align: middle;
+    margin-right: 20rpx; }
+  .cell-item text {
+    vertical-align: middle;
+    font-size: 32rpx; }
+  .cell-item .arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12rpx;
+    height: 26rpx; }
+  .cell-item .hr {
+    position: absolute;
+    left: 50rpx;
+    bottom: 0;
+    width: 750rpx;
+    border-top: 1px #eeeeed solid; }

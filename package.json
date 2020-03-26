@@ -1,0 +1,27 @@
+{
+  "name": "libai-shopping-guide-h5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishPath": {
+    "prod": {
+      "path": "./dist"
+    },
+    "test": {
+      "path": "./dist"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.1.0",
+    "weui-miniprogram": "^0.2.2",
+    "wx-computed": "^0.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0"
+  }
+}

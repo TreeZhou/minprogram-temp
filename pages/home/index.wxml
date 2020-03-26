@@ -1,0 +1,55 @@
+<d-page>
+	<d-header backBtn="{{false}}" slot='head' />
+	<navigator url="/pages/form/index">前往表单页面</navigator>
+
+	<cus-btn bind:click='showPopup1' text="显示弹窗1" />
+	<cus-btn bind:click='showPopup2' text="显示对话框" />
+	<cus-btn bind:click='showSelectPopup' text="显示选择弹窗" />
+
+	<search-bar/>
+	<cus-cell/>
+
+	<!--  生成二维码需要一个canvas标签，只能放在page页面文件中；将其隐藏到了画面外 -->
+	<qrcode id="qrcode" qrcodeString="qrcodeString" />
+	<canvas style='opacity: 0;position: fixed;z-index: -1;top: -1000rpx;left: -1000rpx;width: 200rpx; height: 200rpx;' canvas-id="qrcode-canvas" />
+
+	<calendar/>
+
+	<cus-upload>1</cus-upload>
+
+	<view style='height:200rpx;' />
+
+	<nav-tab active="home" />
+
+</d-page>
+<select wx:if="{{popup.selectPopupVisiable}}" bind:change='hideAllPopup' />
+
+<common-popup
+ width="640"
+ height="512"
+ bind:close='hideAllPopup'
+ wx:if="{{popup.commonPopupVisiable}}"
+>
+	<text>弹窗1</text>
+	<cus-btn
+	 class="btn"
+	 bgc="#68B200"
+	 fontSize="{{32}}"
+	 bind:click='hideAllPopup'
+	 text="知道了"
+	/>
+</common-popup>
+
+<van-dialog
+ use-slot
+ show="{{ popup.dialogPopupVisiable }}"
+ show-cancel-button
+ confirm-button-color="#83B725"
+ bind:confirm="handle"
+ bind:cancel="hideAllPopup"
+>
+	<view class='confirm' style='position: relative;width: 100%;height: 535rpx;'>
+		<text>文字</text>
+	</view>
+</van-dialog>
+

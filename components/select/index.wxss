@@ -1,0 +1,55 @@
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60rpx;
+  font-size: 34rpx;
+  margin-bottom: 20rpx; }
+
+.search-bar {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 119rpx; }
+
+.scroll {
+  position: absolute;
+  width: 578rpx;
+  height: 542rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 210rpx;
+  border-radius: 15rpx;
+  border: 1rpx solid #dbd8d8; }
+  .scroll .radio-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+  .scroll .radio {
+    display: block;
+    width: 90%;
+    height: 77rpx;
+    line-height: 77rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: 1rpx solid #dbd9d9; }
+    .scroll .radio .name {
+      font-size: 28rpx;
+      width: 450rpx;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
+
+.btn-next {
+  position: absolute;
+  width: 480rpx;
+  height: 90rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 779rpx; }

@@ -1,0 +1,168 @@
+<d-page>
+	<d-header slot="head" />
+	<mp-form id="form" rules="{{rules}}" models="{{formData}}">
+		<mp-cells>
+			<mp-cell prop="name">
+				<input
+				 focus="{{nameInputFocus}}"
+				 bindinput="commonFormChange"
+				 data-field="name"
+				 class="weui-input"
+				 placeholder="您的姓名/称呼："
+				 placeholder-class="placeholder"
+				 value="{{formData.name}}"
+				/>
+				<image slot="icon" src="./icon.png" style="margin-right:20rpx;vertical-align: middle;width:23rpx; height: 30rpx;" />
+			</mp-cell>
+			<mp-cell prop="phone">
+				<view class='phone-wrap'>
+					<view class='wrap'>
+						<image slot="icon" src="./icon.png" style="margin-right:20rpx;vertical-align: middle;width:23rpx; height: 30rpx;" />
+						<input
+						 bindinput="commonFormChange"
+						 data-field="phone"
+						 class="weui-input"
+						 placeholder="您的手机号："
+						 placeholder-class="placeholder"
+						 class="phone"
+						 value="{{formData.phone}}"
+						 disabled="{{true}}"
+						/>
+					</view>
+
+					<button
+					 wx:if="{{!formData.phone}}"
+					 slot="footer"
+					 class="btn-phone"
+					 open-type="getPhoneNumber"
+					 bindgetphonenumber="getPhone"
+					>
+						<cus-btn
+						 pointerEvents="none"
+						 style="point-event:none"
+						 width="{{575}}"
+						 height="{{80}}"
+						 bgc="#67B200"
+						 fontSize="{{28}}"
+						 text="点击获取微信手机"
+						 rect
+						/>
+					</button>
+
+					<button
+					 wx:else
+					 slot="footer"
+					 class="btn-phone"
+					 open-type="getPhoneNumber"
+					 bindgetphonenumber="reGetPhone"
+					>
+						<cus-btn
+						 pointerEvents="none"
+						 slot="footer"
+						 width="{{575}}"
+						 height="{{80}}"
+						 bgc="#67B200"
+						 fontSize="{{28}}"
+						 text="重新获取"
+						 rect
+						/>
+					</button>
+				</view>
+			</mp-cell>
+
+			<mp-cell prop="sex" title="性别:">
+				<image slot="icon" src="icon.png" style="margin-right:20rpx;vertical-align: middle;width:23rpx; height: 30rpx;" />
+				<van-radio-group
+				 slot="footer"
+				 class="sex-wrap"
+				 value="{{ formData.sex }}"
+				 data-field="sex"
+				 bind:change="sexChange"
+				>
+					<van-radio use-icon-slot name="男" class="radio">
+						男
+						<image class='ratio-icon' slot="icon" src="{{ formData.sex === '男' ? './ratio-active-icon.png':'./ratio-icon.png'}}" />
+					</van-radio>
+					<van-radio use-icon-slot name='女' class="radio">
+						女
+						<image class='ratio-icon' slot="icon" src="{{ formData.sex === '女' ? './ratio-active-icon.png':'./ratio-icon.png'}}" />
+					</van-radio>
+				</van-radio-group>
+			</mp-cell>
+
+			<mp-cell prop="year">
+				<picker
+				 data-field="date"
+				 mode="date"
+				 value="{{date}}"
+				 start="1950-09-01"
+				 end="2020-09-01"
+				 bindchange="onDateChange"
+				 fields="month"
+				>
+					<view class='date-wrap'>
+						<image slot="icon" src="./icon.png" style="margin-right:20rpx;vertical-align: middle;width:23rpx; height: 30rpx;" />
+						<text>出生年份：</text>
+						<input
+						 bindinput="commonFormChange"
+						 data-field="year"
+						 class="weui-input year-input"
+						 placeholder-class="placeholder"
+						 disabled="{{true}}"
+						 value="{{formData.year}}"
+						/>
+						<van-icon name="arrow-down" size="25rpx" color="#D6D6D6" />
+						<text>月份：</text>
+						<input
+						 bindinput="commonFormChange"
+						 data-field="month"
+						 class="weui-input month-input"
+						 placeholder-class="placeholder"
+						 disabled="{{true}}"
+						 value="{{formData.month}}"
+						/>
+						<van-icon name="arrow-down" size="25rpx" color="#D6D6D6" />
+					</view>
+				</picker>
+
+			</mp-cell>
+			<mp-cell prop="shop">
+				<input
+				 bindinput="commonFormChange"
+				 data-field="shop"
+				 class="weui-input"
+				 placeholder="选择登记门店："
+				 placeholder-class="placeholder"
+				 disabled="{{true}}"
+				 value="{{formData.shop}}"
+				/>
+				<image slot="icon" src="icon.png" style="margin-right:20rpx;vertical-align: middle;width:23rpx; height: 30rpx;" />
+				<cus-btn
+				 slot="footer"
+				 width="{{120}}"
+				 height="{{60}}"
+				 bgc="#67B200"
+				 color="#fff"
+				 fontSize="{{28}}"
+				 text="选择"
+				 rect
+				/>
+			</mp-cell>
+
+		</mp-cells>
+	</mp-form>
+	<van-divider custom-style="margin-top: 0;" />
+	<view class='prococol'>
+		<van-checkbox
+		 class='checkbox'
+		 value="{{ checked }}"
+		 bind:change="agress"
+		 checked-color="#67B200"
+		/>
+		同意
+		<navigator url="/pages/privacyPolicy/index?type=protocol" class="weui-agree__link specila">《会员协议》</navigator>
+		和
+		<navigator url="/pages/privacyPolicy/index?type=policy" class="weui-agree__link specila">《会员隐私政策》</navigator>
+	</view>
+</d-page>
+

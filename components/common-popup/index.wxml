@@ -1,0 +1,14 @@
+<van-popup round show="{{ true }}" class="common-popup">
+	<view class="common-popup" style="{{'width:'+width+'rpx;height:'+height+'rpx;background-color:'+bgc}}">
+		<slot/>
+	</view>
+</van-popup>
+
+<!-- <common-popup
+	 wx:if="{{visiable}}"
+	 bgc='#fff'
+	 width="640"
+	 height="411"
+	>
+	</common-popup> -->
+

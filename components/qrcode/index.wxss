@@ -1,0 +1,42 @@
+.consumer-qrcode .bg {
+  position: absolute;
+  left: 0%;
+  top: 0rpx;
+  width: 600rpx;
+  height: 793rpx; }
+
+.consumer-qrcode .btn-close {
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 29rpx; }
+
+.consumer-qrcode .title {
+  width: 100%;
+  text-align: center;
+  top: 95rpx;
+  font-size: 40rpx;
+  color: #000;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold; }
+
+.consumer-qrcode .qrcode {
+  width: 300rpx;
+  height: 300rpx;
+  top: 211rpx;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.consumer-qrcode .desc {
+  width: 90%;
+  text-align: center;
+  top: 650rpx;
+  font-size: 32rpx;
+  color: #000;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }

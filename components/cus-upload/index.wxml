@@ -1,0 +1,12 @@
+<van-uploader
+ file-list="{{ fileList }}"
+ bind:after-read="afterRead"
+ class="cus-upload"
+ bind:delete="delete"
+>
+	<image class="add-icon" style="{{fileList.length === 3?'opacity:0;pointer-events:none':''}}" src="./add-icon.png" />
+</van-uploader>
+<view class='process-bar'>
+	<view class='process-content' style="{{'width:'+progress+'%'}}" />
+</view>
+

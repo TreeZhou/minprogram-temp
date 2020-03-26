@@ -1,0 +1,10 @@
+<image class="qrcode" style="{{'width:'+width+';height:'+height}}" src="{{qrcodeImg}}" />
+
+<!--  生成二维码需要一个canvas标签，只能放在page页面文件中；将其隐藏到了画面外
+ 
+<qrcode id="qrcode" wx:if='{{true}}' qrcodeString="qrcodeString" />
+<canvas style='opacity: 0;position: fixed;z-index: -1;top: -1000rpx;left: -1000rpx;width: 200rpx; height: 200rpx;' canvas-id="qrcode-canvas" />
+
+this.selectComponent('#qrcode').create();
+-->
+

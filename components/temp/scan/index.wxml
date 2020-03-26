@@ -1,0 +1,15 @@
+<image class="scan-icon" src="/assets/scan-icon.png" catchtap='scanCode' />
+<!-- 
+  scanCode() {
+    wx.scanCode({
+      success: res => {
+        console.log(res);
+      }
+    });
+  }
+  .scan-icon {
+    width: 47rpx;
+    height: 46rpx;
+  }
+ -->
+

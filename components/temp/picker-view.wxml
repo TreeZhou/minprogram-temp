@@ -1,0 +1,12 @@
+<picker-view style="width: 100%; height: 400rpx;" bindchange="giftNameChange" value="{{pickerValue}}">
+	<picker-view-column style="text-align:center">
+		<view wx:for="{{list}}" wx:key='{{index}}' style="line-height: 50px">{{item.name}}</view>
+	</picker-view-column>
+</picker-view>
+
+<!-- pickerValue: [0] -->
+
+<!-- giftNameChange(e) {
+    this.setData({ pickerValue: e.detail.value });
+}, -->
+

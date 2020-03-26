@@ -1,0 +1,24 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "globals": {
+    "Page": true,
+    "App": true,
+    "Component": true,
+    "getApp": true,
+    "wx": true,
+    "getCurrentPages": true,
+    "require": true,
+    "__dirname": true
+  },
+  "rules": {
+    "equire-atomic-updates": 0
+  }
+}

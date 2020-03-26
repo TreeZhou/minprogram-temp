@@ -1,0 +1,79 @@
+<scroll-view scroll-y="true" class="scroll-list">
+	<van-checkbox-group value="{{ checked }}" bind:change="onCheckboxChange">
+		<view
+		 class="item"
+		 wx:for="{{list}}"
+		 wx:key="{{item.id}}"
+		 data-index="{{ index }}"
+		 catch:tap="toggleCheckbox"
+		>
+			<van-checkbox
+			 catch:tap="noop"
+			 use-icon-slot
+			 name="{{item.id}}"
+			 class="radio checkboxes-{{ index }}"
+			>
+				<image class="ratio-icon " slot="icon" src="{{ list[index].checked ? '/assets/ratio-active-icon.png':'/assets/ratio-icon.png'   }}" />
+			</van-checkbox>
+		</view>
+	</van-checkbox-group>
+</scroll-view>
+
+<!-- 
+onCheckboxChange(event) {
+    this.setData({
+      checked: event.detail
+    });
+  },
+  toggleCheckbox(event) {
+    const { index } = event.currentTarget.dataset;
+    const checkbox = this.selectComponent(`.checkboxes-${index}`);
+    checkbox.toggle();
+  }, 
+ noop() {},
+-->
+
+<scroll-view scroll-y="true" class="consumer-list">
+	<van-radio-group value="{{ checked }}" bind:change="onRatioChange">
+		<view
+		 class="item"
+		 wx:for="{{list}}"
+		 wx:key="{{item.id}}"
+		 wx:for-item="item"
+		 data-name="{{ item.id }}"
+		 catch:tap="clickRatio"
+		>
+			<van-radio use-icon-slot name="{{item.id}}" class="radio">
+				<image class="ratio-icon" slot="icon" src="{{ checked == item.id ? '/assets/ratio-active-icon.png':'/assets/ratio-icon.png'}}" />
+			</van-radio>
+		</view>
+	</van-radio-group>
+</scroll-view>
+<!-- 
+	 
+		
+onRatioChange(event) {
+    const { name } = event.currentTarget.dataset;
+    this.setData({
+      checked: name
+    });
+}, 
+
+.item {
+		position: relative;
+		width: 644rpx;
+		height: 217rpx;
+		.radio {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 31rpx;
+			display: inline-block;
+			.ratio-icon {
+				width: 40rpx;
+				height: 40rpx;
+			}
+		}
+	}
+-->
+

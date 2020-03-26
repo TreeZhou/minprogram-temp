@@ -1,0 +1,12 @@
+<view class='divider' style="border: 1rpx rgb(211, 230, 177,0.4) solid;" />
+<!-- 
+
+.divider {
+  position: absolute;
+  top: 390rpx;
+  width: 546rpx;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+} -->
+

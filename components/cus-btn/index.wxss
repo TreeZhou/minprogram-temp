@@ -1,0 +1,26 @@
+.cus-btn {
+  position: relative;
+  text-align: center;
+}
+.round {
+  border-radius: 100rpx;
+}
+.rect {
+  border-radius: 10rpx;
+}
+.text {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

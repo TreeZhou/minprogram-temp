@@ -1,0 +1,39 @@
+<view
+ wx:if="{{!disable}}"
+ catchtap="click"
+ class="cus-btn {{rect ?'rect':'round'}}"
+ style="{{'pointer-events:'+pointerEvents+';'}}{{'width:'+width+'rpx;height:'+height+'rpx;color:'+color+';'}}{{plain?'border:1rpx '+bgc+' solid;':'background-color:'+ (disable?'#757575':bgc)}}"
+>
+	<text style="{{'font-size:'+fontSize+'rpx;'}}" class="text">{{text}}</text>
+</view>
+<view
+ wx:else
+ catchtap="click"
+ class="cus-btn {{rect ?'rect':'round'}}"
+ style="{{'pointer-events:'+pointerEvents+';'}}{{'width:'+width+'rpx;height:'+height+'rpx;color:'+color+';'}}{{plain?'border:1rpx '+'#757575'+' solid;':'background-color:'+ '#757575'}}"
+>
+	<text style="{{'font-size:'+fontSize+'rpx;'}}{{'color:'+(plain?'#757575':'#fff')}}" class="text">{{text}}</text>
+</view>
+
+<view wx:if="{{cover}}" class="cover cus-btn" style="{{'pointer-events:'+pointerEvents+';'}}{{'width:'+width+'rpx;height:'+height+'rpx;color:'+color+';'}}" />
+<image
+ wx:if="{{img}}"
+ class="cover cus-btn"
+ src="{{src}}"
+ style="{{'pointer-events:'+pointerEvents+';'}}{{'width:'+width+'rpx;height:'+height+'rpx;'}}"
+/>
+
+<!-- <cus-btn
+ img=""
+ cover="true"
+ width="{{480}}"
+ height="{{90}}"
+ bgc="#68B200"
+ color="#fff"
+ fontSize="{{32}}"
+ bind:click='click'
+ text="知道了"
+ rect
+ plain
+/> -->
+

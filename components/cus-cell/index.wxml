@@ -1,0 +1,15 @@
+<view class='cell-item' catchtap='click'>
+	<image class='icon' mode="widthFix" src="{{iconImg}}" />
+	<text>{{text}}</text>
+	<image class='arrow' src="{{arrowImg}}" />
+	<view class="hr" wx:if='{{showHr}}' />
+</view>
+
+<!-- 
+<cus-cell
+		 iconSrc="{{'/assets/icon.png'}}"
+		 arrowSrc='/assets/icon.png'
+		 text='title'
+		 catchtap='handler'
+		/> -->
+

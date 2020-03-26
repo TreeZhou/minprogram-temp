@@ -1,0 +1,25 @@
+<view class="nt-tabs" style="padding-bottom:{{safePad - 15}}px">
+	<view
+	 bindtap="_go"
+	 data-url="/pages/consumer/home/index"
+	 data-active="{{active === 'home'}}"
+	 data-re-launch="true"
+	>
+		<image class='bottom-icon-1' src="./bottom-icon-1-{{active === 'home'}}.png" />
+	</view>
+	<view bindtap="_go" data-active="{{active === 'name'}}" data-re-launch="true">
+		<image class='bottom-icon-2' src="./bottom-icon-2-{{active === 'source'}}.png" />
+	</view>
+	<view
+	 bindtap="_go"
+	 data-url="/pages/consumer/me/index"
+	 data-active="{{active === 'me'}}"
+	 data-re-launch="true"
+	>
+		<image class='bottom-icon-3' src="./bottom-icon-3-{{active === 'me'}}.png" />
+	</view>
+</view>
+
+<!-- usage -->
+<!-- <nav-tab active="me" /> -->
+

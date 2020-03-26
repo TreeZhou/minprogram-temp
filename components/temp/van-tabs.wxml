@@ -1,0 +1,41 @@
+<van-tabs
+ color="#2ABE00"
+ line-width='40'
+ active="{{ tagActive }}"
+ bind:change="tagChange"
+ custom-class='tab'
+>
+	<van-tab title="未领取" />
+	<van-tab title="已领取" />
+</van-tabs>
+
+<!-- 
+    tagChange(event) {
+      const type = event.detail.name;
+      this.setData({
+        tagActive: type
+      });
+    }
+ -->
+
+<!-- 
+.tab {
+  .van-ellipsis {
+    font-size: 40rpx;
+    color: #e3e3e3;
+    vertical-align: middle;
+    line-height: 120rpx !important;
+    height: 120rpx !important;
+  }
+  .van-tab--active {
+    .van-ellipsis {
+      color: #71cd49;
+    }
+  }
+  .van-tabs__wrap,
+  .van-tabs__nav {
+    line-height: 120rpx !important;
+    height: 120rpx !important;
+  }
+} -->
+

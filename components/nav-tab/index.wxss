@@ -1,0 +1,34 @@
+.nt-tabs {
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 97rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nt-tabs {
+  line-height: 0;
+}
+
+.nt-tab {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.5;
+  box-sizing: border-box;
+  padding-top: 10rpx;
+}
+
+.bottom-icon-1,
+.bottom-icon-2,
+.bottom-icon-3 {
+  width: 79rpx;
+  height: 68rpx;
+}

@@ -1,0 +1,39 @@
+<!-- 
+  
+<button
+ class="btn"
+ open-type="getUserInfo"
+ bindgetuserinfo="handle"
+>
+	<image src="/assets/default.png" />
+</button> 
+ open-type="getPhoneNumber"
+ 
+
+-->
+<!-- open-type="getPhoneNumber" -->
+
+<!-- 
+	handle(e) {
+		if (e.detail.errMsg.indexOf('fail') > -1) return;
+		const { encryptedData, iv } = e.detail;
+	}
+-->
+
+<!-- 
+.btn {
+  width: 640rpx;
+  height: 220rpx;
+  position: absolute;
+  left: 55rpx;
+  top: 601rpx;
+  background-color: unset;
+  &:after {
+    content: unset;
+  }
+  image {
+    width: 100%;
+    height: 100%;
+  }
+} -->
+
