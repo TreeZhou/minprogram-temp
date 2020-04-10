@@ -10,22 +10,20 @@ function multiple(template, mun = 10) {
 }
 
 const data = multiple(function() {
-  return [
-    {
-      gift_id: Random.string(10, 20),
-      provider_id: Random.string(10, 20),
-      gift_name: Random.string(10, 20),
-      gift_img: '/assets/default.png',
-      gift_score: Random.integer(1, 50),
-      gift_type: Random.string(10, 20),
-      gift_sequence: Random.integer(1, 1000),
-      start_at: Random.date('yyyy-MM-dd hh:mm').replace(/-/g, '/'),
-      end_at: Random.date('yyyy-MM-dd hh:mm').replace(/-/g, '/'),
-      stock: Random.integer(1, 1000),
-      is_on_sale: Random.integer(1, 2),
-      description: Random.name(10, 20)
-    }
-  ];
+  return {
+    gift_id: Random.string(10, 20),
+    provider_id: Random.string(10, 20),
+    gift_name: Random.string(10, 20),
+    gift_img: '/assets/default.png',
+    gift_score: Random.integer(1, 50),
+    gift_type: Random.string(10, 20),
+    gift_sequence: Random.integer(1, 1000),
+    start_at: Random.date('yyyy-MM-dd hh:mm').replace(/-/g, '/'),
+    end_at: Random.date('yyyy-MM-dd hh:mm').replace(/-/g, '/'),
+    stock: Random.integer(1, 1000),
+    is_on_sale: Random.integer(1, 2),
+    description: Random.name(10, 20)
+  };
 });
 
 export default {
