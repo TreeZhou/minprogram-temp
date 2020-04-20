@@ -16,6 +16,7 @@ App({
     let env;
     try {
       env = wx.getAccountInfoSync();
+      console.log(env);
       if (!env) {
         env = 'none';
       }
@@ -24,8 +25,13 @@ App({
       env = 'none';
     }
     // !注意检查
-    if (env !== 'trial' && env !== 'develop') {
-      this.globalData.isProd = true;
+    if (env && env.miniProgram && env.miniProgram.envVersion) {
+      if (
+        env.miniProgram.envVersion == 'trial' ||
+        env.miniProgram.envVersion == 'develop'
+      ) {
+        this.globalData.isProd = false;
+      }
     }
     this.globalData.scene = e.scene;
     this.overShare();
@@ -74,9 +80,11 @@ App({
   },
 
   //分享配置
-  overShare: function() {
+  overShare: function () {
+    const excludePage = ['pages/xxx/index'];
+
     //监听路由切换
-    wx.onAppRoute(function() {
+    wx.onAppRoute(function () {
       let pages = getCurrentPages(),
         view = pages[pages.length - 1];
       let url = config.share.path;
@@ -87,9 +95,9 @@ App({
         url += key + '=' + value + '&';
       }
       url = url.substring(0, url.length - 1);
-      if (view) {
+      if (view && !excludePage.includes(view.route)) {
         //这里可以过滤不需要复用的内容
-        view.onShareAppMessage = function() {
+        view.onShareAppMessage = function () {
           //你的分享配置
           console.log('fenxiang:', url);
           return {

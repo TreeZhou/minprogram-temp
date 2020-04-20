@@ -1,11 +1,4 @@
 <d-page>
-	<view class='loading'>
-		<image class="logo" src='/assets/share.png' />
-		<view class='process-bar'>
-			<view class='process-content' style="{{'width:'+progress+'%'}}" />
-		</view>
-		<text class="text">Loading...</text>
-	</view>
-
+	<loading id="loading" />
 </d-page>
 

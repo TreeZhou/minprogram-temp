@@ -41,6 +41,7 @@
     "mp-cell": "./weui-miniprogram/cell/cell",
     "mp-form": "./weui-miniprogram/form/form",
     "nav-tab": "./components/nav-tab/index",
+    "loading": "./components/loading/index",
     "cus-btn": "./components/cus-btn/index",
     "d-header": "./components/d-header/index",
     "d-page": "./components/d-page/index",

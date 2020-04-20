@@ -2,14 +2,19 @@ const app = getApp();
 import mixinMethods from '../../mixin/methods';
 import initComputed from 'wx-computed';
 
+
+const dataTemp = {
+  userInfo: null,
+  popup: {
+    commonPopupVisiable: false,
+    dialogPopupVisiable: false,
+    selectPopupVisiable: false
+  }
+};
 Page({
-  data: {
-    userInfo: null,
-    popup: {
-      commonPopupVisiable: false,
-      dialogPopupVisiable: false,
-      selectPopupVisiable: false
-    }
+  data: JSON.parse(JSON.stringify(dataTemp)),
+  init() {
+    this.setData(JSON.parse(JSON.stringify(dataTemp)));
   },
   computed: {
     computedName() {

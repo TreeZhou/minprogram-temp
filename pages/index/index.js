@@ -2,32 +2,18 @@ const app = getApp();
 import config from '../../config';
 import { wxCheckSession } from '../../sdk/wxSdk';
 Page({
-  data: {
-    progress: 0,
-    timer: null
-  },
+  data: {},
   async onLoad(option) {
     console.log('index/index', option, getCurrentPages());
     this.saveSearchData(option);
-    this.startProgress();
+    this.selectComponent('#loading').startProgress();
     await this.login();
     this.initPage();
-  },
-  onUnload: function() {
-    clearInterval(this.data.timer);
   },
   saveSearchData(option) {
     if (Object.keys(option).length > 0) {
       app.globalData.searchObj = option;
     }
-  },
-  startProgress() {
-    let timer = setInterval(() => {
-      if (this.data.progress <= 99)
-        return this.setData({ progress: this.data.progress + 2 });
-      clearInterval(this.data.timer);
-    }, 100);
-    this.setData({ timer });
   },
   async login() {
     try {

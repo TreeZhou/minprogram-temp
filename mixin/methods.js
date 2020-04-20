@@ -4,5 +4,11 @@ export default {
       this.data.popup[item] = false;
     });
     this.setData({ popup: this.data.popup });
+  },
+  toHome() {
+    wx.redirectTo({
+      url: '/pages/home/index',
+      ...app.getCommonCallback('redirectTo')
+    });
   }
 };

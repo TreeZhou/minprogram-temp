@@ -51,8 +51,12 @@ onCheckboxChange(event) {
 </scroll-view>
 <!-- 
 	 
-		
-onRatioChange(event) {
+	onRatioChange(event){
+    this.setData({
+      checked: event.detial
+    });
+	}	
+clickRatio(event) {
     const { name } = event.currentTarget.dataset;
     this.setData({
       checked: name

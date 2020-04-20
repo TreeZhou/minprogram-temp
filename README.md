@@ -4,6 +4,9 @@
 
 线上：
 
+## gitee
+https://gitee.com/tuzhan/cmb-fighting-answer-client/settings#remove
+
 ## 调试模式
 
 #### 调试模式

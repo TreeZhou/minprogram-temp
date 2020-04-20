@@ -5,7 +5,7 @@
 		<view wx:if="{{ safeAreaMode }}" class="{{ableSafeArea ? 'safe-area':'full'}}">
 			<slot name="safe-page" />
 		</view>
-		<view wx:else class="full">
+		<view wx:else class="full" style="transform:scale({{scaleRatio}})">
 			<slot/>
 		</view>
 	</view>

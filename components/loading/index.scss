@@ -1,0 +1,42 @@
+.loading {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 300rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.logo {
+  position: absolute;
+  top: -40rpx;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 115rpx;
+  height: 159rpx;
+}
+.process-bar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 120rpx;
+  border-radius: 10rpx;
+  width: 447rpx;
+  height: 10rpx;
+  background-color: #e2e6dc;
+  overflow: hidden;
+  .process-content {
+    height: 100%;
+    width: 0%;
+    background-color: rgba(133, 184, 38, 0.753);
+  }
+}
+.text {
+  position: absolute;
+  top: 150rpx;
+  color: #9f9f9f;
+  font-size: 20rpx;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

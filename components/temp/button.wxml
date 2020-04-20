@@ -8,10 +8,10 @@
 	<image src="/assets/default.png" />
 </button> 
  open-type="getPhoneNumber"
+ bindgetphonenumber="handle"
  
 
 -->
-<!-- open-type="getPhoneNumber" -->
 
 <!-- 
 	handle(e) {
