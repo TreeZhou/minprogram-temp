@@ -1,0 +1,4 @@
+<image class='image' src='{{_src}}' binderror='errorHandler' />
+
+<!-- <default-head class="head" src="{{userInfo.avatar}}" /> -->
+
