@@ -7,7 +7,7 @@ const config = {
   cookieStoreKey: 'cookie_5',
   localStorageName: 'localStorageName',
   // reqBaseURL: 'https://[host]/[path]/api',
-  reqBaseURL: 'https://api.h5no1.com/liby-shopping-guide/api',
+  reqBaseURL: 'xxxx请求地址',
   debugPath: '/pages/index/index', //快速进入的页面
   mock: false,
   debug: false
